@@ -1,0 +1,30 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Form</title>
+</head>
+<body>
+    <h1>Add User</h1>
+    <form action="/test" method="POST">
+        <label for="name">Name :</label>
+        <input type="text" id="player_name" name="player_name" required>
+        <br>
+        <label for="position_id">Position :</label>
+        <input type="text" id="position_id" name="position_id" required>
+        <br>
+        <label for="player_dob">Date of Birth :</label>
+        <input type="text" id="player_dob" name="player_dob" required>
+        <br>
+        <label for="player_contact">Contact :</label>
+        <input type="text" id="player_contact" name="player_contact" required>
+        <br>
+        <label for="player_address">Address :</label>
+        <textarea id="player_address" name="player_address" required> </textarea>
+        <br>
+        <button type="submit" name="register_button" value="player_register">Register Player</button>
+    </form>
+</body>
+</html>
